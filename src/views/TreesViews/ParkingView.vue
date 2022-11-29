@@ -25,6 +25,7 @@ onMounted(() => {
     </v-card>
     <v-card>
       <v-btn v-if="treeStore.single.sensors[0].last_value.value">Temperature: {{ treeStore.single.sensors[0].last_value.value }}</v-btn>
+      <!-- ^^^^ Sensor value that is undefined before hot-update -->
     </v-card>
   </v-main>
 </template>
