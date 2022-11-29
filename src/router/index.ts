@@ -21,6 +21,16 @@ const router = createRouter({
       path: '/funnycaptcha',
       name: 'Funny Captcha',
       component: () => import('../views/CaptchaView.vue')
+    },
+    {
+      path: '/tree',
+      name: 'Tree List',
+      component: () => import('../views/TreeListView.vue')
+    },
+    {
+      path: '/tree/V63Nuc0Nl80PXTpTd6xH7',
+      name: 'Parking',
+      component: () => import('../views/TreesViews/ParkingView.vue')
     }
   ]
 })
